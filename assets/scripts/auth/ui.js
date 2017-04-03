@@ -21,9 +21,22 @@ const signInFailure = (error) => {
   console.error(error)
 }
 
+const signOutSuccess = (data) => {
+  console.log('signOutSuccess ran. Data is :', data)
+  // We want to clear the entire object once we sign-out
+  store.user = null
+  console.log('store is: ', store)
+}
+
+const signOutFailure = (error) => {
+  console.error(error)
+}
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
-  signInFailure
+  signInFailure,
+  signOutSuccess,
+  signOutFailure
 }
