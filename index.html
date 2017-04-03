@@ -17,7 +17,21 @@
       <form id="sign-up">
         <fieldset>
           <legend>Sign up!</legend>
+          <input type="text" name="credentials[email]" id="sign-up-email" placeholder="Enter Email">
+          <!-- Type = Password will hide the text with dots -->
+          <input type="password" name="credentials[password]" id="sign-up-password" placeholder="Enter Password">
+          <input type="password" name="credentials[password_confirmation]" id="sign-up-password-confirmation" placeholder="Confirm Password">
           <input type="submit" name="submit" value="Sign up!">
+        </fieldset>
+      </form>
+
+      <form id="sign-in">
+        <fieldset>
+          <legend>Sign in!</legend>
+          <input type="text" name="credentials[email]" id="sign-up-email" placeholder="Enter Email">
+          <!-- Type = Password will hide the text with dots -->
+          <input type="password" name="credentials[password]" id="sign-up-password" placeholder="Enter Password">
+          <input type="submit" name="submit" value="Sign in!">
         </fieldset>
       </form>
 
